@@ -1,0 +1,162 @@
+body {
+  background-color: steelblue;
+}
+
+#battlefield1{
+  display: block;
+  position: relative;
+  height: 300px;
+  margin-bottom: -110px;
+  font-size: 0px;
+  color: green;
+  text-shadow: -1px 0 #FF6666, 0 1px #FF6666, 1px 0 #FF6666, 0 -1px #FF6666;
+  font-size: 40px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+#battlefield1 div{
+  position: absolute;
+}
+
+#battlefield1 .store{
+  top: -50%;
+}
+
+#battlefield2{
+  display: block;
+  position: relative;
+  height: 300px;
+  margin-top: -110px;
+  color: #FFCC00;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  font-size: 40px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+#battlefield2 div{
+  position: absolute;
+  top: 50%;
+}
+
+#console{
+  background-color: grey;
+  color: black;
+  font-size: 48px;
+  text-shadow: -1px 0 #129471, 0 1px #129471, 1px 0 #129471, 0 -1px #129471;
+  width: 100vw;
+  height: 60px;
+  margin-bottom: 40px;
+}
+
+#container{
+  margin-left: 0px;
+  margin-top: 0px;
+  font-size: 0px;
+  width: 100vw;
+  position: relative;
+}
+
+div {
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+}
+
+.phantom{
+  opacity: 0;
+  width: 75px;
+
+}
+.store{
+  background-color: #993333;
+  height: 300px;
+  display: inline-flex;
+}
+
+.bowl{
+  background-color: #4E422A;
+  display: inline-flex;
+  transition: all 0.4s ease-out;
+}
+
+.clickable {
+  background-color: #716855;
+}
+
+#battlefield2 .clickable:hover{
+  background-color: gold;
+  color: black;
+}
+
+#battlefield1 .clickable:hover{
+  background-color: darkgreen;
+  color: white;
+}
+
+#banner {
+  height: 40px;
+  border: 1px solid black;
+}
+
+#modal {
+  height: 40px;
+  border: 1px solid black;
+}
+
+#boo {
+  position: absolute;
+  background-image: url("boo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  top: 80px;
+  left: 75.0%;
+  z-index: 10;
+  opacity: 1;
+  transition: all 0.4s ease-out;
+}
+/*19.5 31 42.5 += 11.5 for mario's left
+-=32 px for sprite positions*/
+#mario {
+  position: absolute;
+  background-image: url("super-mario-sprite.png");
+  background-position:0px 0px;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 32px;
+  top: 460px;
+  left: 17.5%;
+  z-index: 10;
+  opacity: 1;
+}
+
+#rollback {
+  position: absolute;
+  background-image: url('undoArrow.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 570px;
+  left: 360px;
+  height: 55px;
+  width: 55px;
+  transition: all 1.4s ease-out;
+}
+
+#rollback:hover {
+  transform: rotate(-720deg);
+}
+
+#modal {
+    background-color: grey;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 100px;
+    left: 140px;
+    color: black;
+    font-size: 28px;
+    text-shadow: -1px 0 #129471, 0 1px #129471, 1px 0 #129471, 0 -1px #129471;
+}
