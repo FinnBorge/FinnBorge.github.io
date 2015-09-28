@@ -337,7 +337,7 @@ var rollBack = function(){ // how to make this work for multiple turns?
   for(i=0;i<battlefield.length;i++){
     battlefield[i].stoneCount = backState[i];
   }
-  playerTurn = backState[14];
+  playerTurn = backState[backState.length];
   if(playerTurn === "player1"){
     clearInterval(mar);
     clearInterval(boo);
